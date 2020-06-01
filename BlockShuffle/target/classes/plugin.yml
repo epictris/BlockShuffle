@@ -1,0 +1,7 @@
+name: BlockShuffle
+version: 1.0-SNAPSHOT
+main: tris.blockshuffle.BlockShuffle
+api-version: 1.13
+commands:
+  blockshuffle:
+    description: start block shuffle
