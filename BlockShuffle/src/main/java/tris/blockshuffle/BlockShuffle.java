@@ -451,7 +451,7 @@ public final class BlockShuffle extends JavaPlugin implements Listener {
                             this.cancel(); // Stops the timer loop
                             playing = false;
 
-                            // Runs if 0 players remain
+                        // Runs if 0 players remain
                         } else if (players.size() == 0) {
                             Bukkit.broadcastMessage(ChatColor.DARK_RED + "Everyone lost!"); // Says that everyone lost to all players
                             this.cancel(); // Stops the timer loop
@@ -460,7 +460,7 @@ public final class BlockShuffle extends JavaPlugin implements Listener {
                             timeRemaining = roundTime+1; // Resets timer (1 is added because the timeRemaining variable will be decremented later in the function)
                         }
 
-                        // Runs if 10 seconds or less remain in the round
+                    // Runs if 10 seconds or less remain in the round
                     } else if (timeRemaining <= 10) {
 
                         // Loops through all players who haven't died yet
@@ -475,7 +475,7 @@ public final class BlockShuffle extends JavaPlugin implements Listener {
                             }
                         }
 
-                        // Runs every minute
+                    // Runs every minute
                     } else if (timeRemaining % 60 == 0) {
                         Bukkit.broadcastMessage(timeRemaining / 60 + " minutes remaining!"); // Tells the remaining time to all players
                     }
