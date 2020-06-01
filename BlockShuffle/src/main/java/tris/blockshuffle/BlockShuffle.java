@@ -33,9 +33,11 @@ class BlockInfo {
 }
 
 public final class BlockShuffle extends JavaPlugin implements Listener {
+
+    // Global variables
     boolean playing = false; // whether the game is currently running
     HashMap<String, PlayerInfo> players = new HashMap<String, PlayerInfo>(); // HashMap to store PlayerInfo objects
-    int roundTime = 20; // length of each round in seconds
+    int roundTime = 300; // length of each round in seconds
     int timeRemaining = roundTime; // number of seconds remaining in a given round
     boolean allPlayersSuccessful = false; // whether all players have found their assigned block during a round
     ArrayList<BlockInfo> allBlocks = new ArrayList<BlockInfo>() {{ // Stores an ArrayList of all blocks which can be assigned to a player
