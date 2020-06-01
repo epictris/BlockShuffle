@@ -473,7 +473,7 @@ public final class BlockShuffle extends JavaPlugin implements Listener {
                             }
                         }
 
-                        // Runs every minute after the timer starts
+                        // Runs every minute
                     } else if (timeRemaining % 60 == 0) {
                         Bukkit.broadcastMessage(timeRemaining / 60 + " minutes remaining!"); // Tells the remaining time to all players
                     }
