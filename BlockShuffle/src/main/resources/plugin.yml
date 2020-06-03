@@ -5,3 +5,11 @@ api-version: 1.13
 commands:
   blockshuffle:
     description: start block shuffle
+  vote:
+    description: votes
+  tnt:
+    description: spawn lit tnt
+  creeper:
+    description: spawn a creeper
+  zombie:
+    description: spawn a zombie
